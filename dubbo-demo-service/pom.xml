@@ -47,7 +47,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/
 	<dependency>
 	    <groupId>io.netty</groupId>
 	    <artifactId>netty-all</artifactId>
-	    <version>4.0.23.Final</version>
+	    <version>4.1.42.Final</version>
 	</dependency>
 	
 	<!--resteasy相关jar包引入 -->
