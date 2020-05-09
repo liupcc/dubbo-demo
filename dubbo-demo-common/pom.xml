@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.liup.cc</groupId>
+    <artifactId>dubbo-demo</artifactId>
+    <version>0.0.1-dubbo-demo</version>
+  </parent>
+  
+  <artifactId>dubbo-demo-common</artifactId>
+  <name>dubbo-demo-common</name>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	    <scope>test</scope>
+	</dependency>
+	
+    <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+	<dependency>
+	    <groupId>org.apache.zookeeper</groupId>
+	    <artifactId>zookeeper</artifactId>
+	    <version>3.5.6</version>
+	    <exclusions>
+		    <exclusion>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+	<dependency>
+	    <groupId>joda-time</groupId>
+	    <artifactId>joda-time</artifactId>
+	    <version>2.10.5</version>
+	</dependency>
+	    
+    <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
+	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-core-asl</artifactId>
+	    <version>1.9.13</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+	<dependency>
+		<groupId>net.sf.json-lib</groupId>
+		<artifactId>json-lib</artifactId>
+		<version>2.4</version>
+		<classifier>jdk15</classifier>
+	</dependency>
+    <dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5.5</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot</artifactId>
+	    <version>2.2.0.RELEASE</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.30</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>jcl-over-slf4j</artifactId>
+	    <version>1.7.30</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>jul-to-slf4j</artifactId>
+	    <version>1.7.30</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>log4j-over-slf4j</artifactId>
+	    <version>1.7.30</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-api</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-slf4j-impl</artifactId>
+	    <version>2.12.1</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-1.2-api -->
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-1.2-api</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+    
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>4.2.6.RELEASE</version>
+	</dependency>
+    
+  </dependencies>
+</project>

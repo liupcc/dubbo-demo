@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    
+    <!-- 提供方应用信息 -->
+    <dubbo:application name="${dubbo.application.name}" />
+    
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+    <dubbo:registry address="${dubbo.registry.address}" />
+    
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
+    
+    <!-- 使用tomcat服务 -->
+    <dubbo:protocol name="rest" port="9040" threads="8500" contextpath="liupdemo" server="tomcat" accepts="8500"
+    	 extension="com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter"/> 
+    
+    <dubbo:service document="student" interface="com.liup.cc.web.FindStudentService" ref="findStudentServiceImpl" protocol="rest" validation="true"/>
+    
+</beans>
