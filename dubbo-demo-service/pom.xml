@@ -144,7 +144,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/
 	<dependency>
 	    <groupId>org.quartz-scheduler</groupId>
 	    <artifactId>quartz</artifactId>
-	    <version>2.3.0</version>
+	    <version>2.3.2</version>
 	</dependency>
 	<dependency>
 	    <groupId>org.quartz-scheduler</groupId>
