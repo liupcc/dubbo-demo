@@ -114,7 +114,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/
 	<dependency>
 	    <groupId>org.jboss.resteasy</groupId>
 	    <artifactId>resteasy-client</artifactId>
-	    <version>3.7.0.Final</version>
+	    <version>4.5.7.Final</version>
 	</dependency>
 	<dependency>
 	    <groupId>javax.el</groupId>
