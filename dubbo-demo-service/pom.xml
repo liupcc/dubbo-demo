@@ -177,7 +177,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
-	    <version>4.2.6.RELEASE</version>
+	    <version>5.3.18</version>
 	</dependency>
 	<dependency>
 	    <groupId>org.springframework</groupId>
